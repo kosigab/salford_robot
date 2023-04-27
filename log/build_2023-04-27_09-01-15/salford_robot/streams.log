@@ -1,0 +1,56 @@
+[0.021s] Invoking command in '/home/gabriel/salford_robot/build/salford_robot': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/gabriel/salford_robot -DCMAKE_INSTALL_PREFIX=/home/gabriel/salford_robot/install/salford_robot
+[0.260s] -- The C compiler identification is GNU 11.3.0
+[0.402s] -- The CXX compiler identification is GNU 11.3.0
+[0.422s] -- Detecting C compiler ABI info
+[0.516s] -- Detecting C compiler ABI info - done
+[0.520s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.521s] -- Detecting C compile features
+[0.523s] -- Detecting C compile features - done
+[0.527s] -- Detecting CXX compiler ABI info
+[0.609s] -- Detecting CXX compiler ABI info - done
+[0.615s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.615s] -- Detecting CXX compile features
+[0.616s] -- Detecting CXX compile features - done
+[0.649s] -- Found ament_cmake: 1.3.3 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.809s] -- Found Python3: /usr/bin/python3.10 (found version "3.10.6") found components: Interpreter 
+[0.934s] -- Found ament_lint_auto: 0.12.5 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[1.017s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[1.018s] -- Configured cppcheck include dirs: 
+[1.018s] -- Configured cppcheck exclude dirs and/or files: 
+[1.019s] -- Added test 'flake8' to check Python code syntax and style conventions
+[1.020s] -- Added test 'lint_cmake' to check CMake code style
+[1.021s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[1.024s] -- Added test 'uncrustify' to check C / C++ code style
+[1.024s] -- Configured uncrustify additional arguments: 
+[1.025s] -- Added test 'xmllint' to check XML markup files
+[1.029s] -- Configuring done
+[1.031s] -- Generating done
+[1.031s] -- Build files have been written to: /home/gabriel/salford_robot/build/salford_robot
+[1.035s] Invoked command in '/home/gabriel/salford_robot/build/salford_robot' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/gabriel/salford_robot -DCMAKE_INSTALL_PREFIX=/home/gabriel/salford_robot/install/salford_robot
+[1.037s] Invoking command in '/home/gabriel/salford_robot/build/salford_robot': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/gabriel/salford_robot/build/salford_robot -- -j4 -l4
+[1.077s] Invoked command in '/home/gabriel/salford_robot/build/salford_robot' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/gabriel/salford_robot/build/salford_robot -- -j4 -l4
+[1.121s] Invoking command in '/home/gabriel/salford_robot/build/salford_robot': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/gabriel/salford_robot/build/salford_robot
+[1.130s] -- Install configuration: ""
+[1.131s] -- Installing: /home/gabriel/salford_robot/install/salford_robot/share/salford_robot/src
+[1.131s] -- Installing: /home/gabriel/salford_robot/install/salford_robot/share/salford_robot/src/description
+[1.131s] -- Installing: /home/gabriel/salford_robot/install/salford_robot/share/salford_robot/src/description/salford_robot_description.urdf
+[1.131s] -- Installing: /home/gabriel/salford_robot/install/salford_robot/share/salford_robot/launch
+[1.131s] -- Installing: /home/gabriel/salford_robot/install/salford_robot/share/salford_robot/launch/display.launch.py
+[1.132s] -- Installing: /home/gabriel/salford_robot/install/salford_robot/share/salford_robot/rviz
+[1.132s] -- Installing: /home/gabriel/salford_robot/install/salford_robot/share/salford_robot/rviz/urdf_config.rviz
+[1.132s] -- Installing: /home/gabriel/salford_robot/install/salford_robot/share/ament_index/resource_index/package_run_dependencies/salford_robot
+[1.132s] -- Installing: /home/gabriel/salford_robot/install/salford_robot/share/ament_index/resource_index/parent_prefix_path/salford_robot
+[1.132s] -- Installing: /home/gabriel/salford_robot/install/salford_robot/share/salford_robot/environment/ament_prefix_path.sh
+[1.132s] -- Installing: /home/gabriel/salford_robot/install/salford_robot/share/salford_robot/environment/ament_prefix_path.dsv
+[1.132s] -- Installing: /home/gabriel/salford_robot/install/salford_robot/share/salford_robot/environment/path.sh
+[1.132s] -- Installing: /home/gabriel/salford_robot/install/salford_robot/share/salford_robot/environment/path.dsv
+[1.132s] -- Installing: /home/gabriel/salford_robot/install/salford_robot/share/salford_robot/local_setup.bash
+[1.132s] -- Installing: /home/gabriel/salford_robot/install/salford_robot/share/salford_robot/local_setup.sh
+[1.132s] -- Installing: /home/gabriel/salford_robot/install/salford_robot/share/salford_robot/local_setup.zsh
+[1.132s] -- Installing: /home/gabriel/salford_robot/install/salford_robot/share/salford_robot/local_setup.dsv
+[1.133s] -- Installing: /home/gabriel/salford_robot/install/salford_robot/share/salford_robot/package.dsv
+[1.133s] -- Installing: /home/gabriel/salford_robot/install/salford_robot/share/ament_index/resource_index/packages/salford_robot
+[1.133s] -- Installing: /home/gabriel/salford_robot/install/salford_robot/share/salford_robot/cmake/salford_robotConfig.cmake
+[1.133s] -- Installing: /home/gabriel/salford_robot/install/salford_robot/share/salford_robot/cmake/salford_robotConfig-version.cmake
+[1.133s] -- Installing: /home/gabriel/salford_robot/install/salford_robot/share/salford_robot/package.xml
+[1.136s] Invoked command in '/home/gabriel/salford_robot/build/salford_robot' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/gabriel/salford_robot/build/salford_robot

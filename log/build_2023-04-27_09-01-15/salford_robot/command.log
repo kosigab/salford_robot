@@ -1,0 +1,6 @@
+Invoking command in '/home/gabriel/salford_robot/build/salford_robot': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/gabriel/salford_robot -DCMAKE_INSTALL_PREFIX=/home/gabriel/salford_robot/install/salford_robot
+Invoked command in '/home/gabriel/salford_robot/build/salford_robot' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/gabriel/salford_robot -DCMAKE_INSTALL_PREFIX=/home/gabriel/salford_robot/install/salford_robot
+Invoking command in '/home/gabriel/salford_robot/build/salford_robot': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/gabriel/salford_robot/build/salford_robot -- -j4 -l4
+Invoked command in '/home/gabriel/salford_robot/build/salford_robot' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/gabriel/salford_robot/build/salford_robot -- -j4 -l4
+Invoking command in '/home/gabriel/salford_robot/build/salford_robot': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/gabriel/salford_robot/build/salford_robot
+Invoked command in '/home/gabriel/salford_robot/build/salford_robot' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/gabriel/salford_robot/build/salford_robot

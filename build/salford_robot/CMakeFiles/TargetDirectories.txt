@@ -1,0 +1,9 @@
+/home/gabriel/salford_robot/build/salford_robot/CMakeFiles/uninstall.dir
+/home/gabriel/salford_robot/build/salford_robot/CMakeFiles/salford_robot_uninstall.dir
+/home/gabriel/salford_robot/build/salford_robot/CMakeFiles/test.dir
+/home/gabriel/salford_robot/build/salford_robot/CMakeFiles/edit_cache.dir
+/home/gabriel/salford_robot/build/salford_robot/CMakeFiles/rebuild_cache.dir
+/home/gabriel/salford_robot/build/salford_robot/CMakeFiles/list_install_components.dir
+/home/gabriel/salford_robot/build/salford_robot/CMakeFiles/install.dir
+/home/gabriel/salford_robot/build/salford_robot/CMakeFiles/install/local.dir
+/home/gabriel/salford_robot/build/salford_robot/CMakeFiles/install/strip.dir
