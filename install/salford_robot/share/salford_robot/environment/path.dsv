@@ -1,1 +1,1 @@
-prepend-non-duplicate-if-exists;PATH;bin
+/home/gabriel/salford_robot/build/salford_robot/ament_cmake_environment_hooks/path.dsv
