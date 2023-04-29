@@ -46,7 +46,7 @@
       </geometry>
     </collision>
 
-    <xacro:box_inertia m="15" w="${base_width}" d="${base_length}" h="${base_height}"/>
+    <xacro:box_inertia m="1.5" w="${base_width}" d="${base_length}" h="${base_height}"/>
     <visual>
       <geometry>
         <box size="${base_length} ${base_width} ${base_height}"/>
@@ -56,7 +56,9 @@
       </material>
     </visual>
   </link>
-
+<gazebo reference="base_link">
+      <material>Gazebo/Red</material>
+    </gazebo>
     <!-- Robot Footprint -->
   <link name="base_footprint"/>
 
@@ -77,7 +79,7 @@
         </geometry>
       </collision>
 
-      <xacro:cylinder_inertia m="0.5" r="${wheel_radius}" h="${wheel_width}"/>
+      <xacro:cylinder_inertia m="1.5" r="${wheel_radius}" h="${wheel_width}"/>
       <visual>
         <origin xyz="0 0 0" rpy="${pi/2} 0 0"/>
         <geometry>
@@ -88,6 +90,7 @@
         </material>
       </visual>
     </link>
+    
 
     <joint name="${prefix}_joint" type="continuous">
       <parent link="base_link"/>
@@ -121,9 +124,9 @@
   </link>
 
 <gazebo reference="front_caster">
-<material>Gazebo/Black</material>
-<mul value="0.001" />
-<mu2 value="0.001"/>
+  <material>Gazebo/Black</material>
+  <mul value="0.001" />
+  <mu2 value="0.001"/>
 </gazebo>
 
 
@@ -168,56 +171,14 @@
     <visualize>true</visualize>
     <imu>
       <angular_velocity>
-        <x>
-          <noise type="gaussian">
-            <mean>0.0</mean>
-            <stddev>2e-4</stddev>
-            <bias_mean>0.0000075</bias_mean>
-            <bias_stddev>0.0000008</bias_stddev>
-          </noise>
-        </x>
-        <y>
-          <noise type="gaussian">
-            <mean>0.0</mean>
-            <stddev>2e-4</stddev>
-            <bias_mean>0.0000075</bias_mean>
-            <bias_stddev>0.0000008</bias_stddev>
-          </noise>
-        </y>
-        <z>
-          <noise type="gaussian">
-            <mean>0.0</mean>
-            <stddev>2e-4</stddev>
-            <bias_mean>0.0000075</bias_mean>
-            <bias_stddev>0.0000008</bias_stddev>
-          </noise>
-        </z>
+        <x></x>
+        <y></y>
+        <z></z>
       </angular_velocity>
       <linear_acceleration>
-        <x>
-          <noise type="gaussian">
-            <mean>0.0</mean>
-            <stddev>1.7e-2</stddev>
-            <bias_mean>0.1</bias_mean>
-            <bias_stddev>0.001</bias_stddev>
-          </noise>
-        </x>
-        <y>
-          <noise type="gaussian">
-            <mean>0.0</mean>
-            <stddev>1.7e-2</stddev>
-            <bias_mean>0.1</bias_mean>
-            <bias_stddev>0.001</bias_stddev>
-          </noise>
-        </y>
-        <z>
-          <noise type="gaussian">
-            <mean>0.0</mean>
-            <stddev>1.7e-2</stddev>
-            <bias_mean>0.1</bias_mean>
-            <bias_stddev>0.001</bias_stddev>
-          </noise>
-        </z>
+        <x></x>
+        <y></y>
+        <z></z>
       </linear_acceleration>
     </imu>
   </sensor>
@@ -238,12 +199,12 @@
     <wheel_diameter>0.2</wheel_diameter>
 
     <!-- limits -->
-    <max_wheel_torque>20</max_wheel_torque>
-    <max_wheel_acceleration>1.0</max_wheel_acceleration>
+    <max_wheel_torque>50</max_wheel_torque>
+    <max_wheel_acceleration>2.0</max_wheel_acceleration>
 
     <!-- output -->
     <publish_odom>true</publish_odom>
-    <publish_odom_tf>false</publish_odom_tf>
+    <publish_odom_tf>true</publish_odom_tf>
     <publish_wheel_tf>true</publish_wheel_tf>
 
     <odometry_frame>odom</odometry_frame>
@@ -295,14 +256,10 @@
       </scan>
       <range>
         <min>0.120000</min>
-        <max>7</max>
+        <max>15</max>
         <resolution>0.015000</resolution>
       </range>
-      <noise>
-        <type>gaussian</type>
-        <mean>0.0</mean>
-        <stddev>0.01</stddev>
-      </noise>
+      
     </ray>
     <plugin name="scan" filename="libgazebo_ros_ray_sensor.so">
       <ros>
@@ -313,6 +270,7 @@
     </plugin>
   </sensor>
 </gazebo>
+<!--
 <link name="camera_link">
   <visual>
     <origin xyz="0 0 0" rpy="0 0 0"/>
@@ -385,5 +343,6 @@
     </plugin>
   </sensor>
 </gazebo>
+-->
 
 </robot>

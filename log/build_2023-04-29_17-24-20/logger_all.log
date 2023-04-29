@@ -1,0 +1,102 @@
+[0.714s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[0.714s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=2, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x7f6cb65da6b0>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7f6cb6d901c0>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7f6cb6d901c0>>)
+[0.779s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.779s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.779s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.779s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.779s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.779s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.779s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/gabriel/salford_robot'
+[0.779s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.779s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.780s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.780s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.780s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.780s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.780s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.780s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.780s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.800s] DEBUG:colcon.colcon_core.package_identification:Package '.' with type 'ros.ament_cmake' and name 'salford_robot'
+[0.800s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.800s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.800s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.800s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.800s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.843s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.843s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.849s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 1 installed packages in /home/gabriel/dev_ws/install
+[0.851s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 389 installed packages in /opt/ros/humble
+[0.852s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.951s] Level 5:colcon.colcon_core.verb:set package 'salford_robot' build argument 'cmake_args' from command line to 'None'
+[0.952s] Level 5:colcon.colcon_core.verb:set package 'salford_robot' build argument 'cmake_target' from command line to 'None'
+[0.952s] Level 5:colcon.colcon_core.verb:set package 'salford_robot' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.952s] Level 5:colcon.colcon_core.verb:set package 'salford_robot' build argument 'cmake_clean_cache' from command line to 'False'
+[0.952s] Level 5:colcon.colcon_core.verb:set package 'salford_robot' build argument 'cmake_clean_first' from command line to 'False'
+[0.952s] Level 5:colcon.colcon_core.verb:set package 'salford_robot' build argument 'cmake_force_configure' from command line to 'False'
+[0.952s] Level 5:colcon.colcon_core.verb:set package 'salford_robot' build argument 'ament_cmake_args' from command line to 'None'
+[0.952s] Level 5:colcon.colcon_core.verb:set package 'salford_robot' build argument 'catkin_cmake_args' from command line to 'None'
+[0.952s] Level 5:colcon.colcon_core.verb:set package 'salford_robot' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.952s] DEBUG:colcon.colcon_core.verb:Building package 'salford_robot' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/gabriel/salford_robot/build/salford_robot', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/gabriel/salford_robot/install/salford_robot', 'merge_install': False, 'path': '/home/gabriel/salford_robot', 'symlink_install': False, 'test_result_base': None}
+[0.953s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.956s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.956s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/gabriel/salford_robot' with build type 'ament_cmake'
+[0.957s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/gabriel/salford_robot'
+[0.972s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.973s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.973s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.990s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/gabriel/salford_robot/build/salford_robot': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/gabriel/salford_robot/build/salford_robot -- -j2 -l2
+[1.149s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/gabriel/salford_robot/build/salford_robot' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/gabriel/salford_robot/build/salford_robot -- -j2 -l2
+[1.203s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/gabriel/salford_robot/build/salford_robot': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/gabriel/salford_robot/build/salford_robot
+[1.240s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(salford_robot)
+[1.241s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/gabriel/salford_robot/build/salford_robot' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/gabriel/salford_robot/build/salford_robot
+[1.253s] Level 1:colcon.colcon_core.environment:checking '/home/gabriel/salford_robot/install/salford_robot' for CMake module files
+[1.253s] Level 1:colcon.colcon_core.environment:checking '/home/gabriel/salford_robot/install/salford_robot' for CMake config files
+[1.253s] Level 1:colcon.colcon_core.shell:create_environment_hook('salford_robot', 'cmake_prefix_path')
+[1.254s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/gabriel/salford_robot/install/salford_robot/share/salford_robot/hook/cmake_prefix_path.ps1'
+[1.256s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/gabriel/salford_robot/install/salford_robot/share/salford_robot/hook/cmake_prefix_path.dsv'
+[1.257s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/gabriel/salford_robot/install/salford_robot/share/salford_robot/hook/cmake_prefix_path.sh'
+[1.259s] Level 1:colcon.colcon_core.environment:checking '/home/gabriel/salford_robot/install/salford_robot/bin'
+[1.259s] Level 1:colcon.colcon_core.environment:checking '/home/gabriel/salford_robot/install/salford_robot/lib/pkgconfig/salford_robot.pc'
+[1.260s] Level 1:colcon.colcon_core.environment:checking '/home/gabriel/salford_robot/install/salford_robot/lib/python3.10/site-packages'
+[1.260s] Level 1:colcon.colcon_core.environment:checking '/home/gabriel/salford_robot/install/salford_robot/bin'
+[1.261s] INFO:colcon.colcon_core.shell:Creating package script '/home/gabriel/salford_robot/install/salford_robot/share/salford_robot/package.ps1'
+[1.263s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/gabriel/salford_robot/install/salford_robot/share/salford_robot/package.dsv'
+[1.264s] INFO:colcon.colcon_core.shell:Creating package script '/home/gabriel/salford_robot/install/salford_robot/share/salford_robot/package.sh'
+[1.265s] INFO:colcon.colcon_core.shell:Creating package script '/home/gabriel/salford_robot/install/salford_robot/share/salford_robot/package.bash'
+[1.267s] INFO:colcon.colcon_core.shell:Creating package script '/home/gabriel/salford_robot/install/salford_robot/share/salford_robot/package.zsh'
+[1.269s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/gabriel/salford_robot/install/salford_robot/share/colcon-core/packages/salford_robot)
+[1.314s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(salford_robot)
+[1.315s] Level 1:colcon.colcon_core.environment:checking '/home/gabriel/salford_robot/install/salford_robot' for CMake module files
+[1.316s] Level 1:colcon.colcon_core.environment:checking '/home/gabriel/salford_robot/install/salford_robot' for CMake config files
+[1.316s] Level 1:colcon.colcon_core.shell:create_environment_hook('salford_robot', 'cmake_prefix_path')
+[1.317s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/gabriel/salford_robot/install/salford_robot/share/salford_robot/hook/cmake_prefix_path.ps1'
+[1.318s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/gabriel/salford_robot/install/salford_robot/share/salford_robot/hook/cmake_prefix_path.dsv'
+[1.319s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/gabriel/salford_robot/install/salford_robot/share/salford_robot/hook/cmake_prefix_path.sh'
+[1.320s] Level 1:colcon.colcon_core.environment:checking '/home/gabriel/salford_robot/install/salford_robot/bin'
+[1.320s] Level 1:colcon.colcon_core.environment:checking '/home/gabriel/salford_robot/install/salford_robot/lib/pkgconfig/salford_robot.pc'
+[1.320s] Level 1:colcon.colcon_core.environment:checking '/home/gabriel/salford_robot/install/salford_robot/lib/python3.10/site-packages'
+[1.320s] Level 1:colcon.colcon_core.environment:checking '/home/gabriel/salford_robot/install/salford_robot/bin'
+[1.321s] INFO:colcon.colcon_core.shell:Creating package script '/home/gabriel/salford_robot/install/salford_robot/share/salford_robot/package.ps1'
+[1.321s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/gabriel/salford_robot/install/salford_robot/share/salford_robot/package.dsv'
+[1.322s] INFO:colcon.colcon_core.shell:Creating package script '/home/gabriel/salford_robot/install/salford_robot/share/salford_robot/package.sh'
+[1.323s] INFO:colcon.colcon_core.shell:Creating package script '/home/gabriel/salford_robot/install/salford_robot/share/salford_robot/package.bash'
+[1.324s] INFO:colcon.colcon_core.shell:Creating package script '/home/gabriel/salford_robot/install/salford_robot/share/salford_robot/package.zsh'
+[1.324s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/gabriel/salford_robot/install/salford_robot/share/colcon-core/packages/salford_robot)
+[1.325s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[1.325s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[1.325s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[1.325s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[1.357s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[1.357s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[1.358s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[1.384s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[1.386s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/gabriel/salford_robot/install/local_setup.ps1'
+[1.388s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/gabriel/salford_robot/install/_local_setup_util_ps1.py'
+[1.390s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/gabriel/salford_robot/install/setup.ps1'
+[1.392s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/gabriel/salford_robot/install/local_setup.sh'
+[1.395s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/gabriel/salford_robot/install/_local_setup_util_sh.py'
+[1.396s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/gabriel/salford_robot/install/setup.sh'
+[1.399s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/gabriel/salford_robot/install/local_setup.bash'
+[1.401s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/gabriel/salford_robot/install/setup.bash'
+[1.403s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/gabriel/salford_robot/install/local_setup.zsh'
+[1.409s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/gabriel/salford_robot/install/setup.zsh'
