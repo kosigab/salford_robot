@@ -8,6 +8,7 @@ Panels:
         - /Status1
         - /RobotModel1/Links1
         - /TF1
+        
       Splitter Ratio: 0.5
     Tree Height: 557
 Visualization Manager:
@@ -37,22 +38,6 @@ Visualization Manager:
       Show Arrows: true
       Show Axes: true
       Show Names: true
-    - Class: rviz_default_plugins/Map
-      Enabled: true
-      Name: Map
-      Topic: /map
-    - Class: rviz_default_plugins/LaserScan
-      Enabled: true
-      Name: LaserScan
-      Topic: /scan
-    - Class: rviz_default_plugins/Path
-      Enabled: true
-      Name: Path
-      Topic: /path
-    - Class: rviz_default_plugins/Pose
-      Enabled: true
-      Name: Pose
-      Topic: /pose
   Enabled: true
   Global Options:
     Background Color: 48; 48; 48

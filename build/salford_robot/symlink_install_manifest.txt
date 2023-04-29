@@ -3,7 +3,9 @@
 /home/gabriel/salford_robot/install/salford_robot/share/salford_robot/launch/display.launch.py
 /home/gabriel/salford_robot/install/salford_robot/share/salford_robot/launch/gazebo_launch.py
 /home/gabriel/salford_robot/install/salford_robot/share/salford_robot/rviz/urdf_config.rviz
+/home/gabriel/salford_robot/install/salford_robot/share/salford_robot/rviz/urdf_config2.rviz
 /home/gabriel/salford_robot/install/salford_robot/share/salford_robot/config/ekf.yaml
+/home/gabriel/salford_robot/install/salford_robot/share/salford_robot/config/nav2_params.yaml
 /home/gabriel/salford_robot/install/salford_robot/share/salford_robot/world/third_world.sdf
 /home/gabriel/salford_robot/install/salford_robot/share/ament_index/resource_index/package_run_dependencies/salford_robot
 /home/gabriel/salford_robot/install/salford_robot/share/ament_index/resource_index/parent_prefix_path/salford_robot
