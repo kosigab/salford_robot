@@ -46,7 +46,7 @@
       </geometry>
     </collision>
 
-    <xacro:box_inertia m="1.5" w="${base_width}" d="${base_length}" h="${base_height}"/>
+    <xacro:box_inertia m="0.5" w="${base_width}" d="${base_length}" h="${base_height}"/>
     <visual>
       <geometry>
         <box size="${base_length} ${base_width} ${base_height}"/>
@@ -273,7 +273,7 @@
     </plugin>
   </sensor>
 </gazebo>
-<!--
+
 <link name="camera_link">
   <visual>
     <origin xyz="0 0 0" rpy="0 0 0"/>
@@ -346,6 +346,6 @@
     </plugin>
   </sensor>
 </gazebo>
--->
+
 
 </robot>

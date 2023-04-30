@@ -1,5 +1,4 @@
 /home/gabriel/salford_robot/install/salford_robot/share/salford_robot/src/description/salford_robot_description.urdf
-/home/gabriel/salford_robot/install/salford_robot/share/salford_robot/src/description/salford_robot_description1.sdf
 /home/gabriel/salford_robot/install/salford_robot/share/salford_robot/launch/display.launch.py
 /home/gabriel/salford_robot/install/salford_robot/share/salford_robot/launch/gazebo_launch.py
 /home/gabriel/salford_robot/install/salford_robot/share/salford_robot/rviz/urdf_config.rviz
