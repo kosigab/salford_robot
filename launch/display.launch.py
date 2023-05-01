@@ -2,6 +2,11 @@ import launch
 from launch.substitutions import Command, LaunchConfiguration
 import launch_ros
 import os
+from launch.actions import IncludeLaunchDescription
+from launch.launch_description_sources import PythonLaunchDescriptionSource
+from launch.substitutions import PathJoinSubstitution
+from launch_ros.substitutions import FindPackageShare
+from launch.actions import TimerAction
 
 def generate_launch_description():
     pkg_share = launch_ros.substitutions.FindPackageShare(package='salford_robot').find('salford_robot')
@@ -19,9 +24,7 @@ def generate_launch_description():
         package='joint_state_publisher',
         executable='joint_state_publisher',
         name='joint_state_publisher',
-        #condition=launch.conditions.UnlessCondition(LaunchConfiguration('gui'))
     )
-    
     
     rviz_node = launch_ros.actions.Node(
         package='rviz2',
@@ -44,8 +47,23 @@ def generate_launch_description():
        parameters=[os.path.join(pkg_share, 'config/ekf.yaml'), {'use_sim_time': LaunchConfiguration('use_sim_time')}]
     )
 
+    slam_toolbox_launch = IncludeLaunchDescription(
+        PythonLaunchDescriptionSource(
+            os.path.join(launch_ros.substitutions.FindPackageShare(package='slam_toolbox').find('slam_toolbox'),
+                         "launch",
+                         "online_async_launch.py")
+        )
+    )
+
+    nav2_bringup_launch = IncludeLaunchDescription(
+        PythonLaunchDescriptionSource(
+            os.path.join(launch_ros.substitutions.FindPackageShare(package='nav2_bringup').find('nav2_bringup'),
+                         "launch",
+                         "navigation_launch.py")
+        )
+    )
+
     return launch.LaunchDescription([
-        
         launch.actions.DeclareLaunchArgument(name='use_sim_time', default_value='True',
                                             description='Flag to enable use_sim_time'),
         launch.actions.DeclareLaunchArgument(name='model', default_value=default_model_path,
@@ -54,9 +72,17 @@ def generate_launch_description():
                                             description='Absolute path to rviz config file'),
         launch.actions.ExecuteProcess(cmd=['gazebo', '--verbose', '-s', 'libgazebo_ros_init.so', '-s', 'libgazebo_ros_factory.so', world_path], output='screen'),                           
         joint_state_publisher_node,
-       # joint_state_publisher_gui_node,
         robot_state_publisher_node,
         spawn_entity,
         robot_localization_node,
-        rviz_node
+        rviz_node,
+
+        TimerAction(
+            period=3.0,
+            actions=[slam_toolbox_launch]
+        ),
+        TimerAction(
+            period=6.0,
+            actions=[nav2_bringup_launch]
+        ),
     ])

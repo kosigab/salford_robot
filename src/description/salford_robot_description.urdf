@@ -192,7 +192,7 @@
     <ros>
       <namespace>/</namespace>
     </ros>
-
+   
     <!-- wheels -->
     <left_joint>drivewhl_l_joint</left_joint>
     <right_joint>drivewhl_r_joint</right_joint>
@@ -202,8 +202,8 @@
     <wheel_diameter>0.2</wheel_diameter>
 
     <!-- limits -->
-    <max_wheel_torque>200</max_wheel_torque>
-    <max_wheel_acceleration>10.0</max_wheel_acceleration>
+    <max_wheel_torque>50</max_wheel_torque>
+    <max_wheel_acceleration>3.0</max_wheel_acceleration>
 
     <!-- output -->
     <publish_odom>true</publish_odom>

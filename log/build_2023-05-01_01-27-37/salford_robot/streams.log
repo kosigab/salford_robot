@@ -1,0 +1,27 @@
+[0.032s] Invoking command in '/home/gabriel/salford_robot/build/salford_robot': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/gabriel/salford_robot/build/salford_robot -- -j4 -l4
+[0.158s] Invoked command in '/home/gabriel/salford_robot/build/salford_robot' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/gabriel/salford_robot/build/salford_robot -- -j4 -l4
+[0.206s] Invoking command in '/home/gabriel/salford_robot/build/salford_robot': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/gabriel/salford_robot/build/salford_robot
+[0.213s] -- Install configuration: ""
+[0.215s] -- Execute custom install script
+[0.216s] -- Up-to-date symlink: /home/gabriel/salford_robot/install/salford_robot/share/salford_robot/src/description/salford_robot_description.urdf
+[0.217s] -- Up-to-date symlink: /home/gabriel/salford_robot/install/salford_robot/share/salford_robot/launch/display.launch.py
+[0.217s] -- Up-to-date symlink: /home/gabriel/salford_robot/install/salford_robot/share/salford_robot/rviz/urdf_config.rviz
+[0.217s] -- Up-to-date symlink: /home/gabriel/salford_robot/install/salford_robot/share/salford_robot/config/ekf.yaml
+[0.218s] -- Up-to-date symlink: /home/gabriel/salford_robot/install/salford_robot/share/salford_robot/config/nav2_params.yaml
+[0.220s] -- Up-to-date symlink: /home/gabriel/salford_robot/install/salford_robot/share/salford_robot/world/third_world.sdf
+[0.220s] -- Up-to-date symlink: /home/gabriel/salford_robot/install/salford_robot/share/ament_index/resource_index/package_run_dependencies/salford_robot
+[0.221s] -- Up-to-date symlink: /home/gabriel/salford_robot/install/salford_robot/share/ament_index/resource_index/parent_prefix_path/salford_robot
+[0.222s] -- Up-to-date symlink: /home/gabriel/salford_robot/install/salford_robot/share/salford_robot/environment/ament_prefix_path.sh
+[0.224s] -- Up-to-date symlink: /home/gabriel/salford_robot/install/salford_robot/share/salford_robot/environment/ament_prefix_path.dsv
+[0.229s] -- Up-to-date symlink: /home/gabriel/salford_robot/install/salford_robot/share/salford_robot/environment/path.sh
+[0.229s] -- Up-to-date symlink: /home/gabriel/salford_robot/install/salford_robot/share/salford_robot/environment/path.dsv
+[0.230s] -- Up-to-date symlink: /home/gabriel/salford_robot/install/salford_robot/share/salford_robot/local_setup.bash
+[0.231s] -- Up-to-date symlink: /home/gabriel/salford_robot/install/salford_robot/share/salford_robot/local_setup.sh
+[0.232s] -- Up-to-date symlink: /home/gabriel/salford_robot/install/salford_robot/share/salford_robot/local_setup.zsh
+[0.233s] -- Up-to-date symlink: /home/gabriel/salford_robot/install/salford_robot/share/salford_robot/local_setup.dsv
+[0.233s] -- Symlinking: /home/gabriel/salford_robot/install/salford_robot/share/salford_robot/package.dsv
+[0.247s] -- Up-to-date symlink: /home/gabriel/salford_robot/install/salford_robot/share/ament_index/resource_index/packages/salford_robot
+[0.248s] -- Up-to-date symlink: /home/gabriel/salford_robot/install/salford_robot/share/salford_robot/cmake/salford_robotConfig.cmake
+[0.249s] -- Up-to-date symlink: /home/gabriel/salford_robot/install/salford_robot/share/salford_robot/cmake/salford_robotConfig-version.cmake
+[0.249s] -- Up-to-date symlink: /home/gabriel/salford_robot/install/salford_robot/share/salford_robot/package.xml
+[0.254s] Invoked command in '/home/gabriel/salford_robot/build/salford_robot' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/gabriel/salford_robot/build/salford_robot

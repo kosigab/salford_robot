@@ -9,10 +9,6 @@ ros2 launch salford_robot display.launch.py
 
 cd ~/salford_robot
 source install/setup.bash
-ros2 run tf2_ros static_transform_publisher 0 0 0 0 0 0 map odom
-
-cd ~/salford_robot
-source install/setup.bash
 ros2 launch slam_toolbox online_async_launch.py
 
 cd ~/salford_robot
