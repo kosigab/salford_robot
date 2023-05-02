@@ -12,7 +12,7 @@ def generate_launch_description():
     pkg_share = launch_ros.substitutions.FindPackageShare(package='salford_robot').find('salford_robot')
     default_model_path = os.path.join(pkg_share, 'src/description/salford_robot_description.urdf')
     default_rviz_config_path = os.path.join(pkg_share, 'rviz/urdf_config.rviz')
-    world_path=os.path.join(pkg_share, 'world/third_world.sdf'),
+    world_path=os.path.join(pkg_share, 'world/floor_plan3.sdf'),
     
     robot_state_publisher_node = launch_ros.actions.Node(
         package='robot_state_publisher',
