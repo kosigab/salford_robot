@@ -78,11 +78,11 @@ def generate_launch_description():
         rviz_node,
 
         TimerAction(
-            period=3.0,
+            period=15.0,
             actions=[slam_toolbox_launch]
         ),
-        TimerAction(
-            period=6.0,
-            actions=[nav2_bringup_launch]
-        ),
+        # TimerAction(
+        #     period=25.0,
+        #     actions=[nav2_bringup_launch]
+        # ),
     ])
