@@ -1,0 +1,73 @@
+[33mcommit c0f1898c274979f77ed37d059d0068934081689f[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m)[m
+Author: kosigab <kosigab@gmail.com>
+Date:   Fri May 5 07:23:11 2023 +0100
+
+    navigation fixed
+
+[33mcommit c0e84acea3ea19048d870f85444bda549caf06e8[m
+Author: kosigab <kosigab@gmail.com>
+Date:   Fri May 5 07:03:33 2023 +0100
+
+    navigation completed
+
+[33mcommit 5c8a67955e67d4dcc5f54e17a730e8ee9eb1e358[m[33m ([m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: Gabriel Ejimonu <kosigab@gmail.com>
+Date:   Wed May 3 04:20:35 2023 +0100
+
+    nav2_bringup now must run separately from display_launch with map.yaml attached. slam map now provided.
+
+[33mcommit 369f8aab76d4351db12d3ec80d83510bac22eb98[m
+Author: Gabriel Ejimonu <kosigab@gmail.com>
+Date:   Tue May 2 03:13:14 2023 +0100
+
+    Latest updates to urdf
+
+[33mcommit a1397c1a91709c9d1c89cb67d6adc980f28eda2f[m
+Author: Gabriel Ejimonu <kosigab@gmail.com>
+Date:   Mon May 1 02:17:34 2023 +0100
+
+    Fixed local and global costmap not showing issue
+
+[33mcommit f16a1783a3be4a1ff1304d8bb15680b9fcaa09f3[m
+Author: Gabriel Ejimonu <kosigab@gmail.com>
+Date:   Sun Apr 30 04:31:02 2023 +0100
+
+    new update
+
+[33mcommit 695e48ea764e205f0914c2f033e5ab0a34e29cd5[m
+Author: Gabriel Ejimonu <kosigab@gmail.com>
+Date:   Sat Apr 29 23:37:34 2023 +0100
+
+    Added nav2_config, updated urdf_config
+
+[33mcommit 98ff6e316f7fa3793873a87c85e6780670418230[m
+Author: Gabriel Ejimonu <kosigab@gmail.com>
+Date:   Sat Apr 29 18:07:17 2023 +0100
+
+    Removed IMU noise and fixed orientation issue
+
+[33mcommit 4a170f50c305c669274454b5dacdf341d907a89c[m
+Author: Gabriel Ejimonu <kosigab@gmail.com>
+Date:   Fri Apr 28 14:14:20 2023 +0100
+
+    added gazebo mu1 and mu2 to salford_robot_description for the front caster wheel to reduce friction
+
+[33mcommit 85a50316e8f595a38721af4d396e24b5a932029c[m
+Merge: bb3fa31 5ff7c1a
+Author: Gabriel Ejimonu <kosigab@gmail.com>
+Date:   Thu Apr 27 20:27:06 2023 +0100
+
+    Merge remote-tracking branch 'origin/main'
+    This merge is necessary to incorporate remote changes and synchronize the local and remote repositories.
+
+[33mcommit bb3fa31b38150129eac0d62522054b5a3e671bf2[m
+Author: Gabriel Ejimonu <kosigab@gmail.com>
+Date:   Thu Apr 27 20:18:04 2023 +0100
+
+    Initial commit
+
+[33mcommit 5ff7c1a7e66be85a532037d86f4f77457a49b0ad[m
+Author: kosigab <52760685+kosigab@users.noreply.github.com>
+Date:   Thu Apr 27 18:55:49 2023 +0100
+
+    Initial commit
